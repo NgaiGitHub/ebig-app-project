@@ -1,0 +1,214 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/default_white"
+    android:padding="@dimen/app_8dp" >
+
+    <RelativeLayout
+        android:id="@+id/layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/defaultText"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/app_40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/warid" />
+
+        <com.ebig.app.custom.ui.EbigSpinner
+            android:id="@+id/salback_warid_spin"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/app_40dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/textView1" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/defaultText"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/app_40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/salback_warid_spin"
+            android:background="@color/default_light_gray"
+            android:gravity="left|center"
+            android:text="@string/companyno" />
+
+        <EditText
+            android:id="@+id/salback_companyno_ed"
+            style="@style/defaultEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/app_40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:ems="10"
+            android:inputType="text|number"
+            android:singleLine="true"
+            android:text="220130017" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/salback_companyno_nextbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/login_btn_switch_bg"
+            android:drawableRight="@drawable/allow_right"
+            android:padding="@dimen/app_10dp"
+            android:text="@string/next"
+            android:textColor="@color/default_white"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layer1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@color/default_white"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/salback_surebtn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/default_tip_item_sel"
+            android:drawableRight="@drawable/allow_right"
+            android:gravity="left|center_vertical"
+            android:paddingBottom="@dimen/app_10dp"
+            android:paddingLeft="@dimen/app_5dp"
+            android:paddingTop="@dimen/app_10dp"
+            android:text="已录入 5 个销退商品，点击查看"
+            android:textColor="@color/default_red" />
+
+        <TextView
+            style="@style/defaultText"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/app_40dp"
+            android:layout_marginBottom="@dimen/app_5dp"
+            android:layout_marginTop="@dimen/app_5dp"
+            android:background="@color/default_light_gray"
+            android:gravity="left|center"
+            android:text="@string/goodsno" />
+
+        <EditText
+            android:id="@+id/salback_goodsno_ed"
+            style="@style/defaultEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/app_48dp"
+            android:layout_marginBottom="@dimen/app_5dp"
+            android:ems="10"
+            android:inputType="text|number"
+            android:singleLine="true"
+            android:text="1" >
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/salback_goodsno_prevbtn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="@dimen/app_8dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_btn_switch_bg"
+                android:drawableLeft="@drawable/allow_left"
+                android:padding="@dimen/app_10dp"
+                android:text="@string/prev"
+                android:textColor="@color/default_white" />
+
+            <Button
+                android:id="@+id/salback_goodsno_nextbtn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@drawable/login_btn_switch_bg"
+                android:drawableRight="@drawable/allow_right"
+                android:padding="@dimen/app_10dp"
+                android:text="@string/next"
+                android:textColor="@color/default_white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layer2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_white"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/salback_lv_continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/app_8dp"
+            android:background="@drawable/default_item_sel"
+            android:drawableRight="@drawable/allow_right"
+            android:gravity="left|center_vertical"
+            android:padding="@dimen/app_10dp"
+            android:text="确认 √ 对商品并继续   [查询]"
+            android:textColor="@color/default_custom_actionbar_bg" />
+
+        <ListView
+            android:id="@+id/salback_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/salback_lv_continue"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/default_white"
+            android:divider="@color/default_block"
+            android:dividerHeight="@dimen/app_1dp" >
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/layer3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/salback_lv_continue"
+            android:background="@color/default_light_gray"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/salback_lv_check_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/app_5dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_btn_switch_bg"
+                android:drawableLeft="@drawable/allow_left"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/prev"
+                android:textColor="@color/default_white" />
+
+            <Button
+                android:id="@+id/salback_lv_check_commit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/login_btn_switch_bg"
+                android:text="@string/sure"
+                android:textColor="@color/default_white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

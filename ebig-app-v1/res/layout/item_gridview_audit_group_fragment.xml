@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="@dimen/app_16dp"
+    android:background="@drawable/item_funs_bg_sel" >
+
+    <TextView
+        android:id="@+id/groupTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="73dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:gravity="center"
+        android:padding="@dimen/app_16dp"
+        android:text="@string/curr_netinfo_isnuable"
+        android:textSize="@dimen/app_15sp" />
+
+</RelativeLayout>

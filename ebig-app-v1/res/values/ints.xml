@@ -1,0 +1,4 @@
+<resources>
+ 
+    <item name="default_pushtorefash_pagesize" type="integer">6</item>
+</resources>

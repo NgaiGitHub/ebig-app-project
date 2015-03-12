@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:background="@drawable/skin_memeberbutton_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp" >
+ 
+        <com.ebig.app.custom.ui.ClearEditText
+            android:id="@+id/radioGroupCompany"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/skin_memeberbutton_background_btn_switch"
+            android:hint="点击输入客户查询试试"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp" >
+
+        </com.ebig.app.custom.ui.ClearEditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_margin="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/skin_memeberbutton_background"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/radioGroupMonth"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioBtnOneMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:checked="true"
+                android:onClick="onClick"
+                android:text="一月内" />
+
+            <RadioButton
+                android:id="@+id/radioBtnThreeMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="三月内" />
+
+            <RadioButton
+                android:id="@+id/radioBtnSixMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="半年内" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/beginDateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/skin_memeberbutton_background_btn_switch"
+            android:drawableLeft="@drawable/clock"
+            android:text="@string/date_filter_begintime"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/endDateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/skin_memeberbutton_background_btn_switch"
+            android:drawableLeft="@drawable/clock"
+            android:text="@string/date_filter_endtime"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/dateBtnQuery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/login_btn_switch_bg"
+        android:text=" 完     成   "
+        android:textColor="@color/default_white"
+        android:textSize="15sp" />
+
+</LinearLayout>

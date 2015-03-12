@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingRight="4dp"
+    android:background="@drawable/listview_item_bg">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_margin="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/chatoption_item_add_pressed" />
+
+    <TextView
+        android:id="@+id/item2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_toRightOf="@id/imageView"
+        android:layout_marginTop="8dp"
+        android:textSize="15sp"
+        android:tag="Item no. 2"
+        android:text="Item 2" /> 
+        
+</RelativeLayout>

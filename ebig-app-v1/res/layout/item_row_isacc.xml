@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/default_listview_item_sel"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/app_8dp"
+        android:paddingLeft="@dimen/app_10dp" >
+
+        <com.github.siyamed.shapeimageview.RoundedImageView
+            android:id="@+id/itemrow_acc_img"
+            android:layout_width="@dimen/app_72dp"
+            android:layout_height="@dimen/app_72dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/welcome_android" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/itemrow_acc_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/app_8dp"
+                android:padding="@dimen/app_4dp"
+                android:gravity="center_vertical"
+                android:text="@string/app_name"
+                android:textSize="@dimen/app_15sp" />
+
+            <TextView
+                android:id="@+id/itemrow_acc_namedtl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/app_8dp"
+                android:padding="@dimen/app_4dp"
+                android:gravity="center_vertical"
+                android:text="@string/app_name"
+                android:textSize="@dimen/app_15sp" 
+                android:textColor="#9a9a9a"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/app_27dp"
+            android:layout_height="@dimen/app_27dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/a8o"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.35dp"
+        android:layout_marginLeft="@dimen/app_8dp"
+        android:layout_marginRight="@dimen/app_25dp"
+        android:background="@color/default_gray" />
+
+</LinearLayout>

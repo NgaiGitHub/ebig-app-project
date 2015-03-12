@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#32200002"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <Button
+        android:id="@+id/qCode"
+        style="@style/defaultText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:drawableTop="@drawable/number_nor"
+        android:gravity="center_horizontal"
+        android:onClick="QCodeOnClick"
+        android:tag="qCode"
+        android:text="条形码"
+        android:textColor="@color/default_white" 
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/oneCode"
+        style="@style/defaultText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:drawableTop="@drawable/qr_scanner"
+        android:gravity="center_horizontal"
+        android:onClick="QCodeOnClick"
+        android:tag="true"
+        android:text="二维码"
+        android:textColor="@color/default_custom_actionbar_bg" 
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/lamp"
+        style="@style/defaultText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:drawableTop="@drawable/light_nor"
+        android:gravity="center_horizontal"
+        android:onClick="QCodeOnClick"
+        android:tag="false"
+        android:text="补光灯"
+        android:textColor="@color/default_white" />
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/default_white"
+    android:paddingBottom="@dimen/app_48dp"
+    android:paddingTop="@dimen/app_48dp" >
+
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:id="@+id/lockpatter_imageView"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:src="@drawable/welcome_android"
+        app:siBorderColor="@color/default_custom_actionbar_divider"
+        app:siBorderWidth="2dp" />
+
+    <TextView
+        android:id="@+id/lockpatter_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lockpatter_imageView"
+        android:gravity="center"
+        android:padding="@dimen/app_9dp"
+        android:singleLine="true"
+        android:text="@string/lockpatter_tip"
+        android:textColor="@color/crouton_custom_progressbar_view"
+        android:textSize="@dimen/app_19sp" />
+
+    <TextView
+        android:id="@+id/lockpatter_tip_desc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lockpatter_tip"
+        android:gravity="center"
+        android:singleLine="true"
+        android:visibility="invisible"
+        android:text="@string/lockpatter_tip_desc"
+        android:textColor="@color/crouton_custom_progressbar_view"
+        android:textSize="@dimen/app_15sp" />
+
+    <Button
+        android:id="@+id/lockpatter_losePswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:text="@string/lose_pswd"
+        android:layout_marginTop="@dimen/app_16dp"
+        android:textColor="@color/default_custom_actionbar_divider" />
+
+    <group.pals.android.lib.ui.lockpattern.widget.LockPatternView
+        android:id="@+id/lockpatterView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_above="@id/lockpatter_losePswd"
+        android:layout_below="@id/lockpatter_tip_desc"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

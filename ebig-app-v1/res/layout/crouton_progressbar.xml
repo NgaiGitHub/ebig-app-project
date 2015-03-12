@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:padding="@dimen/app_8dp"
+    android:background="@color/crouton_custom_progressbar_view">
+
+    <ProgressBar
+        android:id="@+id/crouton_progressBar"
+        android:layout_width="@dimen/app_32dp"
+        android:layout_height="@dimen/app_32dp" />
+
+    <TextView
+        android:id="@+id/crouton_textView"
+        android:layout_width="fill_parent"
+        android:singleLine="true"
+        android:layout_height="@dimen/app_32dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/crouton_progressBar"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/app_8dp"
+        android:textSize="@dimen/app_18sp"
+        android:textColor="@color/default_white"
+        android:text="@string/crouton_custom_progress_msg" />
+
+    <Button
+        android:id="@+id/crouton_button"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:visibility="gone"
+        android:layout_alignBaseline="@id/crouton_textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="false"
+        android:background="@drawable/ak5" />
+
+</RelativeLayout>

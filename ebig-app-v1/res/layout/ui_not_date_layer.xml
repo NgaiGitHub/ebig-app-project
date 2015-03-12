@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/not_date_layer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/default_gray"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="@dimen/app_88dp"
+        android:layout_height="@dimen/app_88dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@drawable/evi" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/app_10dp"
+        android:gravity="center"
+        android:text="@string/action_notdate_layer" />
+
+    <Button
+        android:id="@+id/action_reloading"
+        android:layout_width="150dp"
+        android:layout_height="@dimen/app_48dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@drawable/skin_memeberbutton_background"
+        android:onClick="actionReLoading"
+        android:text="@string/action_reloading"
+        android:textSize="@dimen/app_16sp"
+        android:textColor="@color/default_custom_actionbar_bg" />
+
+</LinearLayout>

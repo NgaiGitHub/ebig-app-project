@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="date_filter_today" >今天</string>
+    <string name="date_filter_week" >本周内</string>
+    <string name="date_filter_moth" >本月内</string>
+    <string name="date_filter_default" >自定义</string>
+    <string name="date_filter_begintime" >开始时间</string>
+    <string name="date_filter_endtime" >结束时间</string>
+    <string name="date_filter_tip" >结束时间不可早于开始时间!!</string>
+    
+    
+    
+</resources>

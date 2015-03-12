@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/item_funs_bg_sel">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" 
+        android:layout_margin="@dimen/app_16dp">
+
+        <ImageView
+            android:id="@+id/funsImageView"
+            android:layout_width="@dimen/app_48dp"
+            android:layout_height="@dimen/app_48dp"
+            android:layout_gravity="center"
+            android:src="@drawable/aosp_indicator_code_lock_point_area_circle_blue" />
+
+        <TextView
+            android:id="@+id/funsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/default_funs_name"
+            android:textColor="@color/default_pagetab_textcolor"
+            android:textSize="@dimen/app_13sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

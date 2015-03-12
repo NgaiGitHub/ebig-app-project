@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 
+    <string-array name="pageTabTitle">
+        <item >功能</item>
+        <item >通讯录</item>
+        <item >以大</item>
+        <item >我</item>
+    </string-array>
+    
+    
+    <string-array name="pageTabFragmentCls">
+        <item >com.ebig.app.activity.main.FunsFragment</item>
+        <item >com.ebig.app.activity.main.ContactsFragment</item>
+        <item >com.ebig.app.activity.main.HomeFragment</item>
+        <item >com.ebig.app.activity.main.IsAccFragment</item>
+    </string-array>
+     
+    
+
+    
+</resources>

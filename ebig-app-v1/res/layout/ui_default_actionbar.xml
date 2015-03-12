@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/app_48dp"
+    android:background="@color/default_custom_actionbar_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/default_actionbar_back"
+        android:layout_width="@dimen/app_40dp"
+        android:layout_height="@dimen/app_40dp"
+        android:background="@drawable/a8b" />
+
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="@dimen/app_23dp"
+        android:background="#32200002" />
+
+    <TextView
+        android:id="@+id/default_actionbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/app_8dp"
+        android:text="@string/app_name"
+        android:textColor="@color/default_white"
+        android:textSize="@dimen/app_20sp" />
+
+    <ProgressBar
+        android:id="@+id/default_actionbar_prgbar"
+        android:layout_width="@dimen/app_32dp"
+        android:layout_height="@dimen/app_32dp"
+        android:paddingLeft="@dimen/app_8dp" />
+
+</LinearLayout>

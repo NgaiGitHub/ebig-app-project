@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="3dp">
+
+    <com.ebig.app.custom.ui.ScanClearEditText
+        android:id="@+id/actionBarCustomCenter"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/editext_l14_bg_greenfc"
+        android:drawablePadding="4dp"
+        android:textColor="@color/default_white"
+        android:hint="搜索商品"
+        android:ems="10"
+        android:inputType="text"
+        android:singleLine="true" >
+
+        <requestFocus />
+    </com.ebig.app.custom.ui.ScanClearEditText>
+
+</LinearLayout>

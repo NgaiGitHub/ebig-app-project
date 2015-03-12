@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/app_8dp" >
+
+    <EditText
+        android:id="@+id/suggest_ed"
+        style="@style/defaultEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingTop="@dimen/app_16dp"
+        android:text="你的意见与反馈,我们将收入系统并会详细考虑!这会让我们提供更好的服务!" />
+
+</LinearLayout>

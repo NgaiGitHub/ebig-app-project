@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="alp_color_pattern_path" format="reference" />
+    <color name="alp_pattern_path_light">#ffffff</color>
+    <color name="alp_pattern_path_dark">#52c0ff</color>
+    <color name="alp_pattern_path_wrong">#e63d3d</color>
+    
+    <color name="tab_touch_focus_bg">#52c0ff</color>
+    <color name="tab_touch_bg">#ffffff</color>
+</resources>

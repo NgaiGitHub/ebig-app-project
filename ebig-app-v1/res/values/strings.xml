@@ -1,0 +1,82 @@
+<resources>
+
+    <string name="app_name" >以大科技</string>
+    <string name="defautl_custom_actionbar_center_text">以大科技</string>
+    <string name="default_cancle">取 消</string>
+    <string name="default_lockpattern">设置手势密码</string>
+    <string name="default_funs_name">以大科技</string>
+    <string name="default_clock">2015-01-21 12:00:00</string>
+    <string name="login_account">账号</string>
+    <string name="login_pswd">密码 </string>
+    <string name="login_account_hint">请输入账号</string>
+    <string name="login_pswd_hint">请输入密码</string>
+    <string name="login_btn">登   录</string>
+    <string name="login_trouble">登录遇到问题?</string>
+    <string name="action_msg">消息</string>
+    <string name="action_search">搜索</string>
+    <string name="action_search_hint">ID/编号/关键字</string>
+    <string name="action_more">更多</string>
+    <string name="action_about">关于以大</string>
+    <string name="action_acc_changea">切换账号</string>
+    <string name="action_reloading">重新加载>>></string>
+    <string name="action_notdate_layer">查不到更多信息,数据加载失败!!</string>
+    
+    <string name="action_acc_reg">注   册</string>
+    <string name="action_sel">选择</string>
+    <string name="action_nickname">昵称</string>
+    <string name="action_rg_nickname_tip">例如:李晨</string>
+    <string name="action_mobilenumber">手机号</string>
+    <string name="action_mobilenumber_tip">18833083456</string>
+    <string name="action_rg_tip">国家和地区     中国</string>
+    <string name="action_rg_entry_tip">你希望注册到某企业?     例如:以大科技</string>
+    <string name="action_rg_bindmescm">授权MESCM账号并绑定使用</string>
+    <string name="action_mescm_account">Mescm账号</string>
+    <string name="action_rg_rule">点击上面的"注册"按钮,即表示你同意《以大以讯软件许可证及服务协议》</string>
+    <string name="crouton_custom_progress_msg">正在载入&#8230;</string>
+    <string name="lockpatter_tip">请绘制密码图案</string>
+    <string name="lockpatter_sure">确定该密码图案</string>
+    <string name="lockpatter_tip_desc">5次失败后,需要重新登录</string>
+    <string name="lose_pswd">忘记密码?</string>
+    <string name="curr_netinfo_isnuable">当前网络不可用,点击设置。</string>
+    <string name="app_cannot_connect_srv">服务器有点小忙,请稍后再试!</string>
+    <string name="srv_response_null">服务器,查不到更多信息</string>
+    <string name="srv_response_null_reloading">网络异常,加载信息失败。点击重新加载</string>
+    <string name="this_month">本  月</string>
+    <string name="this_week">本  周</string>
+    <string name="this_quarter">本季度</string>
+    <string name="this_other">其他</string>
+    <string name="default_auditmgr">审批管理</string>
+    <string name="auditmgr_group">[查 询]</string>
+    <string name="auditmgr_check">编 辑</string>
+    <string name="auditmgr_wait">[待 审]</string>
+    <string name="auditmgr_finish">[历 史]</string>
+    <string name="audit_dtl_btn">详  细</string>
+    <string name="audit_nopass_btn">不通过</string>
+    <string name="audit_pass_btn">通  过</string>
+    <string name="warid">仓  库</string>
+    <string name="companyno">客 户 编 码:</string>
+    <string name="goodsno">商 品 编 码:</string>
+    <string name="sure">确  定</string>
+    <string name="next">下  一  步</string>
+    <string name="prev">上  一  步</string>
+    <string name="continue_">继  续</string> 
+
+    <string name="alp_pkey_sys_pattern">alp.pkey.sys.pattern</string>
+    <string name="alp_pkey_sys_auto_save_pattern">alp.pkey.sys.auto_save_pattern</string>
+    <string name="alp_pkey_sys_encrypter_class">alp.pkey.sys.encrypter_class</string>
+    <string name="alp_pkey_display_stealth_mode">alp.pkey.display.stealth_mode</string>
+    <string name="alp_pkey_display_min_wired_dots">节点数至少*个[alp.pkey.display.min_wired_dots]</string>
+    <string name="alp_pkey_display_max_retry">最多可尝试*次[alp.pkey.display.max_retry]</string>
+    <string name="alp_pkey_display_captcha_wired_dots">alp.pkey.display.captcha_wired_dots</string>
+
+    <bool name="alp_pkey_sys_auto_save_pattern_default">false</bool>
+    <bool name="alp_pkey_display_stealth_mode_default">false</bool>
+
+    <integer name="alp_pkey_display_min_wired_dots_default">4</integer>
+    <integer name="alp_pkey_display_max_retry_default">5</integer>
+    <integer name="alp_pkey_display_captcha_wired_dots_default">4</integer>
+
+    <string name="alp_pkey_default_mi_wired_dots_tip">至少需要4个节点 ! </string>
+    <string name="menuitem_filter">[筛选]</string>
+
+</resources>

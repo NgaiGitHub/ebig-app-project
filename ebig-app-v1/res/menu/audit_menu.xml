@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/auditmgr_wait"
+        android:showAsAction="always|withText"
+        android:title="@string/auditmgr_wait"/>
+    <item
+        android:id="@+id/auditmgr_finish"
+        android:showAsAction="always|withText"
+        android:title="@string/auditmgr_finish"/>
+    <item
+        android:id="@+id/auditmgr_group"
+        android:showAsAction="always|withText"
+        android:title="@string/auditmgr_group"/>
+
+</menu>

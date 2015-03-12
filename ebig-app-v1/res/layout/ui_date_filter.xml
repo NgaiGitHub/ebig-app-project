@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/default_gray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/app_1dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/date_filter_begintime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/date_filter_btn_switch_bg"
+            android:padding="@dimen/app_5dp"
+            android:text="@string/date_filter_begintime"
+            android:textColor="@color/default_white" />
+
+        <TextView
+            android:id="@+id/date_filter_begintime_tx"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/default_white"
+            android:gravity="center"
+            android:text="@string/default_clock"
+            android:textSize="@dimen/app_18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/app_1dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/date_filter_endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/date_filter_btn_switch_bg"
+            android:padding="@dimen/app_5dp"
+            android:text="@string/date_filter_endtime"
+            android:textColor="@color/default_white" />
+
+        <TextView
+            android:id="@+id/date_filter_endtime_tx"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/default_white"
+            android:gravity="center"
+            android:text="@string/default_clock"
+            android:textSize="@dimen/app_18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/date_filter_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/default_red"
+        android:gravity="center"
+        android:text="@string/date_filter_tip"
+        android:textColor="@color/default_white"
+        android:textSize="@dimen/app_16sp"
+        android:visibility="gone" />
+
+    <RadioGroup
+        android:id="@+id/date_filter_rg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/app_1dp"
+        android:layout_marginTop="@dimen/app_1dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/date_filter_today"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/app_48dp"
+            android:layout_weight="1"
+            android:background="@drawable/item_funs_bg_sel"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/date_filter_today" />
+
+        <RadioButton
+            android:id="@+id/date_filter_week"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/app_48dp"
+            android:layout_marginLeft="@dimen/app_1dp"
+            android:layout_marginRight="@dimen/app_1dp"
+            android:layout_weight="1"
+            android:background="@drawable/item_funs_bg_sel"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/date_filter_week" />
+
+        <RadioButton
+            android:id="@+id/date_filter_moth"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/app_48dp"
+            android:layout_weight="1"
+            android:background="@drawable/item_funs_bg_sel"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/date_filter_moth" />
+    </RadioGroup>
+
+</LinearLayout>

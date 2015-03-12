@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_white"
+    android:orientation="vertical"
+    android:padding="@dimen/app_16dp" >
+
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:id="@+id/lockpatter_imageView"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/app_16dp"
+        android:src="@drawable/welcome_android"
+        app:siBorderColor="@color/default_gray"
+        app:siBorderWidth="1dp" />
+
+    <com.ebig.app.custom.ui.ClearEditText
+        android:id="@+id/login_account_edit"
+        style="@style/defaultEditText"
+        android:layout_gravity="left"
+        android:drawableLeft="@drawable/login_acc"
+        android:hint="@string/login_account_hint"
+        android:inputType="textPersonName">
+
+        <requestFocus />
+    </com.ebig.app.custom.ui.ClearEditText>
+
+    <com.ebig.app.custom.ui.ClearEditText
+        android:id="@+id/login_pswd_edit"
+        style="@style/defaultEditText"
+        android:drawableLeft="@drawable/login_pswd"
+        android:hint="@string/login_pswd_hint"
+        android:inputType="textPassword" >
+    </com.ebig.app.custom.ui.ClearEditText>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/app_16dp"
+        android:background="@drawable/login_btn_switch_bg"
+        android:onClick="onClick"
+        android:text="@string/login_btn"
+        android:textColor="@color/default_custom_actionbar_textcolor"
+        android:textSize="@dimen/app_18sp" />
+
+    <Button
+        android:id="@+id/login_trouble"
+        style="@style/CustomActionBarFontStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:visibility="gone"
+        android:background="@null"
+        android:text="@string/login_trouble"
+        android:textColor="@color/default_block"
+        android:textSize="@dimen/app_15sp" />
+
+</LinearLayout>

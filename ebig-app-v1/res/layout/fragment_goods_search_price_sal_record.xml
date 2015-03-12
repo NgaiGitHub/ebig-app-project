@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/default_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/goodsInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:text="（6223）板蓝根"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/callBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/goodsInfo"
+            android:layout_margin="6dp"
+            android:onClick="onClick"
+            android:background="@drawable/call" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/md__list_pressed_holo_dark" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/goodsPriceSalRecordListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/default_white"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/md__list_pressed_holo_dark"
+        android:dividerHeight="2dp" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/auditmgr_check"
+        android:showAsAction="always|withText"
+        android:title="@string/auditmgr_check"/>
+
+</menu>

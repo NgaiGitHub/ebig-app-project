@@ -1,0 +1,60 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/default_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/app_48dp" 
+        android:background="@color/default_custom_actionbar_bg" >
+
+        <Button
+            style="@style/CustomActionBarFontStyle"
+            android:id="@+id/lockpattern_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:layout_marginLeft="@dimen/app_16dp"
+            android:text="@string/default_cancle" />
+
+        <Button
+            style="@style/CustomActionBarFontStyle"
+            android:id="@+id/lockpattern_title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/default_lockpattern" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/lockpatter_imageView"
+        android:layout_width="@dimen/app_56dp"
+        android:layout_height="@dimen/app_56dp" 
+        android:layout_margin="@dimen/app_16dp"
+        android:layout_gravity="center"
+        android:src="@drawable/alp_ic_action_lockpattern_dark" />
+
+    <TextView
+        android:id="@+id/lockpatter_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/crouton_custom_progressbar_view"
+        android:textSize="@dimen/app_19sp"
+        android:text="@string/lockpatter_tip" />
+
+    <group.pals.android.lib.ui.lockpattern.widget.LockPatternView
+        android:id="@+id/lockpatterView"
+        android:layout_width="300dp"
+        android:layout_height="300dp" 
+        android:layout_gravity="center" />
+
+</LinearLayout>

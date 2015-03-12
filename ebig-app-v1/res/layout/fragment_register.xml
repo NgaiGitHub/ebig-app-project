@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    
+    <include layout="@layout/fragment_register_info"/>
+
+    <LinearLayout
+        android:id="@+id/register_entry_layr"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/default_white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/default_gray"
+            android:gravity="right|center"
+            android:padding="@dimen/app_8dp"
+            android:text="@string/action_rg_entry_tip"
+            android:textColor="@color/default_block" />
+
+        <ListView
+            android:id="@+id/register_entrylv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+
+    
+</RelativeLayout>

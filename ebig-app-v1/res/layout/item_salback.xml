@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="@dimen/app_5dp"
+    android:layout_marginTop="@dimen/app_5dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_56dp"
+        android:background="@color/background_tab_pressed" >
+
+        <TextView
+            android:id="@+id/item_salback_company"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="TextView" />
+
+        <CheckBox
+            android:id="@+id/item_salback_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@color/default_white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_salback_goodsinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/default_white"
+        android:maxLines="10"
+        android:text="TextView" />
+
+    <RelativeLayout
+        android:id="@+id/layer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/default_light_gray"
+        android:padding="@dimen/app_8dp"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/item_salback_qty"
+            style="@style/defaultEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/app_8dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:ems="10"
+            android:inputType="number" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/item_salback_qty"
+            android:layout_alignBottom="@+id/item_salback_qty"
+            android:layout_alignParentLeft="true"
+            android:text="销退数量:" />
+
+        <com.ebig.app.custom.ui.EbigSpinner
+            android:id="@+id/item_salback_spin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_36dp"
+            android:layout_alignLeft="@+id/item_salback_qty"
+            android:layout_below="@+id/item_salback_qty"
+            android:layout_marginTop="@dimen/app_8dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/item_salback_spin"
+            android:layout_below="@+id/item_salback_qty"
+            android:layout_marginTop="15dp"
+            android:text="销退原因:" />
+
+        <Button
+            android:id="@+id/item_salback_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_36dp"
+            android:layout_alignLeft="@+id/item_salback_spin"
+            android:layout_below="@+id/item_salback_spin"
+            android:background="@drawable/item_funs_bg_sel"
+            android:text="@string/sure" />
+    </RelativeLayout>
+
+</LinearLayout>

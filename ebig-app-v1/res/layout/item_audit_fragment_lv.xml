@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/default_gray"
+    android:padding="@dimen/app_1dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#eaf4ff"
+        android:paddingBottom="@dimen/app_1dp" >
+
+        <TextView
+            android:id="@+id/audit_html_tx"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/default_white"
+            android:maxLines="10"
+            android:padding="@dimen/app_8dp"
+            android:text="@string/action_rg_rule" />
+
+        <TextView
+            android:id="@+id/audit_dtl_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/audit_html_tx"
+            android:layout_marginTop="@dimen/app_1dp"
+            android:background="@drawable/item_funs_bg_sel"
+            android:padding="@dimen/app_8dp"
+            android:text="@string/audit_dtl_btn" />
+
+        <TextView
+            android:id="@+id/audit_pass_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/audit_dtl_btn"
+            android:layout_alignBottom="@+id/audit_dtl_btn"
+            android:layout_marginLeft="@dimen/app_1dp"
+            android:layout_marginRight="@dimen/app_1dp"
+            android:layout_toLeftOf="@+id/audit_dtl_btn"
+            android:background="@drawable/item_funs_bg_sel"
+            android:padding="@dimen/app_8dp"
+            android:text="@string/audit_pass_btn" />
+
+        <TextView
+            android:id="@+id/audit_nopass_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/audit_pass_btn"
+            android:layout_alignBottom="@+id/audit_pass_btn"
+            android:layout_toLeftOf="@+id/audit_pass_btn"
+            android:background="@drawable/item_funs_bg_sel"
+            android:padding="@dimen/app_8dp"
+            android:text="@string/audit_nopass_btn" />
+    </RelativeLayout>
+
+</LinearLayout>

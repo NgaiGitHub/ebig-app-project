@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/app_48dp"
+    android:background="@color/default_custom_actionbar_bg"
+    android:orientation="horizontal" >
+
+    <com.ebig.app.custom.ui.DefaultActionBar
+        android:id="@+id/action_title_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" >
+    </com.ebig.app.custom.ui.DefaultActionBar>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/action_msg"
+        android:layout_width="@dimen/app_48dp"
+        android:layout_height="@dimen/app_48dp"
+        android:background="@drawable/custom_actionbar_touch_bg"
+        android:clickable="true"
+        android:onClick="onOptionsItemSelected"
+        android:orientation="vertical"
+        android:padding="@dimen/app_8dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/actionbar_menu_msg"
+            android:clickable="false"
+            android:longClickable="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/action_search"
+        android:layout_width="@dimen/app_48dp"
+        android:layout_height="@dimen/app_48dp"
+        android:background="@drawable/custom_actionbar_touch_bg"
+        android:clickable="true"
+        android:onClick="onOptionsItemSelected"
+        android:orientation="vertical"
+        android:padding="@dimen/app_8dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/actionbar_menu_search"
+            android:clickable="false"
+            android:longClickable="false" />
+    </LinearLayout>
+
+</LinearLayout>

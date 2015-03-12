@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/action_setting" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/app_4dp" >
+  
+        <ImageButton
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/app_72dp"
+            android:layout_weight="1"
+            android:background="@drawable/ad_mescm"/>
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/app_72dp"
+            android:layout_marginLeft="@dimen/app_4dp"
+            android:layout_weight="1" 
+            android:background="@drawable/ad_bi"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/app_4dp"
+        android:paddingRight="@dimen/app_4dp"
+        android:paddingBottom="@dimen/app_4dp" >
+
+        <ImageButton
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/app_72dp"
+            android:layout_weight="1"
+            android:background="@drawable/ad_app"/>
+
+        <ImageButton
+            android:id="@+id/button4"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/app_72dp"
+            android:layout_marginLeft="@dimen/app_4dp"
+            android:layout_weight="1" 
+            android:background="@drawable/ad_rf" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/funsGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_tab_dividercolor"
+        android:horizontalSpacing="@dimen/app_1dp"
+        android:numColumns="3"
+        android:paddingBottom="@dimen/app_1dp"
+        android:paddingTop="@dimen/app_1dp"
+        android:verticalSpacing="@dimen/app_1dp" >
+    </GridView>
+
+</LinearLayout>

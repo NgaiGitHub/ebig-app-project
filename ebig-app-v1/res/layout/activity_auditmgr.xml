@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/default_light_gray">
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+    </FrameLayout>
+
+    <com.slidinglayer.SlidingLayer
+        xmlns:slidingLayer="http://schemas.android.com/apk/res/com.ebig.app"
+        android:id="@+id/sliding_layer"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        slidingLayer:shadowDrawable="@drawable/slidinglayer_shadow_right"
+        slidingLayer:shadowWidth="@dimen/app_10dp">
+       
+    </com.slidinglayer.SlidingLayer>
+
+</RelativeLayout>

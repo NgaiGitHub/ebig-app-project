@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/default_light_gray"
+    android:orientation="vertical"
+    android:padding="@dimen/app_4dp" >
+
+    <TextView
+        android:id="@+id/audit_editfrom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/app_4dp"
+        android:background="@drawable/default_listview_item_sel"
+        android:gravity="left"
+        android:maxLines="10"
+        android:padding="@dimen/app_4dp"
+        android:scrollbars="vertical"
+        android:text="@string/action_reloading" />
+
+    <ListView
+        android:id="@+id/audit_editfromdtl_lv"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/audit_editfrom"
+        android:background="#dad6d6" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/audit_check_layer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+    android:background="@color/default_light_gray" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/app_10dp"
+            android:text="这里录入你的审批意见!" />
+
+        <EditText
+            android:id="@+id/audit_check_text"
+            style="@style/defaultEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:layout_margin="@dimen/app_10dp"
+            android:ems="10"
+            android:inputType="textMultiLine" >
+        </EditText>
+
+        <Button
+            android:id="@+id/audit_check_nopass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/audit_check_text"
+            android:layout_marginLeft="@dimen/app_4dp"
+            android:background="@drawable/login_btn_switch_bg"
+            android:text="@string/audit_nopass_btn"
+            android:textColor="@color/default_white" />
+
+        <Button
+            android:id="@+id/audit_check_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/audit_check_text"
+            android:layout_toLeftOf="@+id/audit_check_nopass"
+            android:background="@drawable/login_btn_switch_bg"
+            android:text="@string/audit_pass_btn"
+            android:textColor="@color/default_white" />
+    </RelativeLayout>
+
+</RelativeLayout>

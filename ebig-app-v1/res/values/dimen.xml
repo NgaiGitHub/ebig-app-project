@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_22sp">22sp</dimen>
+     <dimen name="app_21sp">21sp</dimen>
+    <dimen name="app_20sp">20sp</dimen>
+    <dimen name="app_15sp">15sp</dimen>
+    <dimen name="app_16sp">16sp</dimen>
+    <dimen name="app_18sp">18sp</dimen>
+    <dimen name="app_19sp">19sp</dimen>
+    <dimen name="app_12sp">12sp</dimen>
+    <dimen name="app_13sp">13sp</dimen>
+    <dimen name="app_10sp">10sp</dimen>
+    
+    <dimen name="app_1dp">1dp</dimen>
+    <dimen name="app_2dp">2dp</dimen>
+    <dimen name="app_3dp">3dp</dimen>
+    <dimen name="app_4dp">4dp</dimen>
+    <dimen name="app_5dp">5dp</dimen>
+    <dimen name="app_8dp">8dp</dimen>
+    <dimen name="app_9dp">9dp</dimen>
+    <dimen name="app_10dp">10dp</dimen>
+    <dimen name="app_12dp">12dp</dimen>
+    <dimen name="app_16dp">16dp</dimen>
+    <dimen name="app_23dp">23dp</dimen>
+    <dimen name="app_25dp">25dp</dimen>
+    <dimen name="app_27dp">27dp</dimen>
+    <dimen name="app_32dp">32dp</dimen>
+    <dimen name="app_36dp">36dp</dimen>
+    <dimen name="app_40dp">40dp</dimen>
+    <dimen name="app_45dp">45dp</dimen>
+    <dimen name="app_48dp">48dp</dimen>
+    <dimen name="app_56dp">56dp</dimen>
+    <dimen name="app_57dp">57dp</dimen>
+    <dimen name="app_60dp">60dp</dimen>
+    <dimen name="app_72dp">72dp</dimen>
+    <dimen name="app_76dp">76dp</dimen>
+    <dimen name="app_88dp">88dp</dimen>
+    
+    <dimen name="radio_button_conner_radius">5dp</dimen>
+</resources>

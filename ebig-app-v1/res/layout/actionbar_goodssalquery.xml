@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/app_48dp"
+    android:background="@color/default_custom_actionbar_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <include layout="@layout/ui_default_actionbar"
+        android:layout_height="fill_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"/>
+    
+    <Button
+        android:id="@+id/goodssalquery_actionbar_more"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="@drawable/btn_bookmark_switch"
+       	android:textColor="@color/default_white" />
+</LinearLayout>
